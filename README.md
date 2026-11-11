@@ -58,3 +58,7 @@ O programa deve calcular o preço total e exibir todas as informações, incluin
 Leia quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 Entrada: O arquivo de entrada contém 4 valores inteiros. 
 Saída: Imprima a mensagem "DIFERENCA = " com todas as letras maiúsculas.
+
+## Documentação específica (v1.0.0)
+
+[Especificação](docs/projeto/ESPECIFICACAO.md) · [Diagramas](docs/uml/README.md) · [Plano de testes](docs/testes/PLANO_DE_TESTES.md) · [Versões](docs/controle/VERSIONAMENTO.md)
