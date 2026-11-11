@@ -1,0 +1,17 @@
+@startuml
+title Atividade1-EdN — módulos independentes
+actor "Aluno / terminal" as T
+component "saudacao.py" as P0
+T --> P0 : python saudacao.py
+component "calculadoraSoma.py" as P1
+T --> P1 : python calculadoraSoma.py
+component "calculadoraNumeroInteiro.py" as P2
+T --> P2 : python calculadoraNumeroInteiro.py
+component "calculadoraDeDimensao.py" as P3
+T --> P3 : python calculadoraDeDimensao.py
+component "calculadoraPrecoTotalCompra.py" as P4
+T --> P4 : python calculadoraPrecoTotalCompra.py
+note bottom
+Sem aplicação única, banco ou APIs compartilhadas.
+end note
+@enduml
