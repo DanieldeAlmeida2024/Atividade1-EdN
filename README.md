@@ -1,3 +1,31 @@
+# Atividade1-EdN — atividades Python
+
+Exercícios iniciais de Python: saudação, soma, dimensões, preço de compra e diferença de produtos.
+
+## Requisitos
+Python 3.10+ e terminal local; não há serviço HTTP ou banco de dados obrigatório nesta atividade.
+
+## Executar
+```bash
+python saudacao.py
+```
+
+Cada script é um exercício independente. Outros arquivos existentes: `saudacao.py, calculadoraSoma.py, calculadoraDeDimensao.py, calculadoraPrecoTotalCompra.py, calculadoraNumeroInteiro.py`.
+
+## Testes
+```bash
+python -m unittest discover -s tests -v
+```
+
+Os testes adicionados verificam presença de arquivos, documentação e sintaxe de código; para validar comportamento, é necessário comparar a entrada e saída de cada exercício com o enunciado original.
+
+## Documentação
+[Requisitos](docs/REQUISITOS.md) · [Arquitetura](docs/ARQUITETURA.md) · [UML](docs/UML.puml) · [Plano de testes](docs/PLANO_TESTES.md) · [Guia de IA](AGENTS.md).
+
+---
+
+## Enunciados anteriores preservados
+
 ## Atividade Prática 01
 ### 1- Programa de Saudação
 
