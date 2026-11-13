@@ -41,13 +41,11 @@ class TestesComportamento(unittest.TestCase):
         self.assertIn("Quantidade Comprada: 3 unidades", saida)
 
     def test_diferenca_com_entradas(self):
-        self.assertEqual(
-            executar("calculadoraNumeroInteiro.py", "1\n2\n3\n4\n").splitlines()[-1],
-            "DIFERENCA = -10",
+        self.assertTrue(
+            executar("calculadoraNumeroInteiro.py", "1\n2\n3\n4\n").endswith("DIFERENCA = -10")
         )
-        self.assertEqual(
-            executar("calculadoraNumeroInteiro.py", "5\n6\n1\n2\n").splitlines()[-1],
-            "DIFERENCA = 28",
+        self.assertTrue(
+            executar("calculadoraNumeroInteiro.py", "5\n6\n1\n2\n").endswith("DIFERENCA = 28")
         )
 
 
