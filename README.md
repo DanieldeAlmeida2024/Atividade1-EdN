@@ -17,14 +17,14 @@ Cada script é um exercício independente. Outros arquivos existentes: `saudacao
 python -m unittest discover -s tests -v
 ```
 
-Além dos testes antigos de estrutura/sintaxe, `tests/test_comportamento.py` executa os cinco exercícios como processos Python e verifica resultados concretos, inclusive duas entradas distintas para a diferença. O workflow `.github/workflows/testes.yml` executa os testes em PRs e na `main`. Os exercícios continuam didáticos; não há API nem serviço de produção.
+`tests/test_comportamento.py` executa os cinco exercícios como processos Python e verifica resultados concretos, inclusive duas entradas distintas para a diferença. O workflow `.github/workflows/testes.yml` executa os testes em PRs e na `main`. Os exercícios continuam didáticos; não há API nem serviço de produção.
 
 ## Documentação
 [Requisitos](docs/REQUISITOS.md) · [Arquitetura](docs/ARQUITETURA.md) · [UML](docs/UML.puml) · [Plano de testes](docs/PLANO_TESTES.md) · [Guia de IA](AGENTS.md).
 
 ---
 
-## Enunciados anteriores preservados
+## Enunciados dos exercícios
 
 ## Atividade Prática 01
 ### 1- Programa de Saudação
