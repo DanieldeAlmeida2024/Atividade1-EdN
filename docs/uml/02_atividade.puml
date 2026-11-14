@@ -1,0 +1,8 @@
+@startuml
+title calculadoraDeDimensao.py: atividade
+start
+:Definir comprimento=12, largura=14, altura=20;
+:Calcular volume = comprimento*largura*altura;
+:Exibir volume de 3360 cm³;
+stop
+@enduml
