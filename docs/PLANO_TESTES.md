@@ -5,4 +5,6 @@
 - CT-03 Comparar manualmente os exemplos do README com as saídas.
 - CT-04 Testar dados inválidos quando especificado no enunciado.
 
-Executar `python -m unittest discover -s tests -v`. CT-03 e CT-04 exigem casos de execução dedicados e ainda não são cobertos por esta suíte estrutural.
+Executar `python -m unittest discover -s tests -v`. Os casos estruturais CT-01 e CT-02 ficam em `test_documentacao.py`. CT-03 e CT-04 têm exemplos executados como subprocessos em `test_comportamento.py`.
+
+Em CT-04, duas entradas distintas chegam ao terceiro valor: uma termina após dois inteiros e a outra fornece texto onde se espera um inteiro. Ambas terminam com código 1, mensagens em português que identificam a causa e nenhum resultado parcial.
