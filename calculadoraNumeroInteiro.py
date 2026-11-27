@@ -14,8 +14,10 @@ def main() -> None:
             int(input(f"Digite o valor de {letra}:"))
             for letra in ("A", "B", "C", "D")
         ]
-    except (ValueError, EOFError) as erro:
-        raise SystemExit(f"Erro: informe os quatro números inteiros. {erro}")
+    except EOFError:
+        raise SystemExit("Erro: entrada encerrada antes dos quatro números inteiros.") from None
+    except ValueError:
+        raise SystemExit("Erro: valor inválido. Informe quatro números inteiros.") from None
     print(f"DIFERENCA = {diferenca_produtos(*valores)}")
 
 

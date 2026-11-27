@@ -15,3 +15,7 @@ Versão **1.0.0**, 11/11/2026. Código analisado: `701df1ea81e9d1d378fff2164c5f2
 ## Reconciliação documental de 14/11/2026
 
 Recuperada modelagem específica de cada script e UML, com indicação explícita de que a revisão anterior é histórica. Preservados código, fixtures e testes já aprovados da main. O CI vigente, e não a matriz histórica, comprova execução.
+
+## Revisão 1.0.1 do plano vigente · 27/11/2026
+
+CT-04 agora distingue entrada incompleta de valor inválido na calculadora de diferença. Python 3.11.9 executou nove testes em `6cb7143729da996b485d59c390ea341b7f0a3a47`, além dos cinco exemplos de terminal.
