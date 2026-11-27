@@ -55,14 +55,20 @@ class TestesComportamento(unittest.TestCase):
                 modulo.diferenca_produtos(errado, 1, 1, 1)
 
     def test_cli_diferenca_rejeita_entrada_invalida_sem_traceback(self):
-        for stdin in ("1\\n2\\n", "1\\n2\\na\\n4\\n"):
+        for stdin, ultimo_prompt, mensagem in (
+            ("1\n2\n", "Digite o valor de C:", "entrada encerrada"),
+            ("1\n2\na\n4\n", "Digite o valor de C:", "valor inválido"),
+        ):
             with self.subTest(entrada=stdin):
                 p = subprocess.run(
                     [sys.executable, str(RAIZ / "calculadoraNumeroInteiro.py")],
                     input=stdin, text=True, capture_output=True, timeout=5, cwd=RAIZ
                 )
-                self.assertNotEqual(0, p.returncode)
+                self.assertEqual(1, p.returncode)
                 self.assertIn("Erro:", p.stderr)
+                self.assertIn(mensagem, p.stderr)
+                self.assertTrue(p.stdout.endswith(ultimo_prompt))
+                self.assertNotIn("DIFERENCA =", p.stdout)
                 self.assertNotIn("Traceback", p.stderr)
 
     def test_diferenca_com_entradas(self):
